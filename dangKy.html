@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigup - LAGOMSTREETWEAR</title>
+    <link rel="icon" type="image/png" href="IMAGES/LOGO & BANNER/LOGO.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="VENDORS/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="VENDORS/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="VENDORS/jquery-3.7.1.js"></script>
+    <script src="VENDORS/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- dòng header của website LAGOMSTREETWEAR-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Image and text -->
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="IMAGES/LOGO & BANNER/LOGO.png" width="35" height="35" class="d-inline-block align-top"
+                            alt="logo LAGOM STREETWEAR">
+                        LAGOM STREETWEAR
+                    </a>
+                    <!-- menu -->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gioithieu.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doitac.html">Đối tác</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chinhsach.html">Chính sách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="giohang.html">Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dangnhap.html">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- dòng đường dẫn của website LAGOMSTREETWEAR -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-span="breadcrumb ">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"> Đăng ký</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- dòng form đăng ký của website LAGOMSTREETWEAR -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="alert alert-success group_form" role="alert">
+                    <div class="alert-heading">
+                        <h1>ĐĂNG KÝ</h1>
+                        <span class="thongBao"></span>
+                    </div>
+                    <form action="/" method="post" name="frmDangKy" id="frmDangKy">
+                        <!-- div họ và tên -->
+                        <div class="element_formDK">
+                            <label for="hoVaTen">Họ và tên</label>
+                            <br><input type="text" name="hoVaTen" id="hoVaTen" class="input_form"
+                                placeholder="Nhập họ và tên...">
+                            <br><span class="error hoVaTen_error"></span>
+                        </div>
+                        <!-- div email -->
+                        <div class="element_formDK">
+                            <label for="email_is">Email</label>
+                            <br><input type="email" name="email_is" id="email_is" class="input_form"
+                                placeholder="Nhập email...">
+                            <br><span class="error email_error"></span>
+                        </div>
+                        <!-- div tên đăng ký -->
+                        <div class="element_formDK">
+                            <label for="tenDangKy">Tên đăng ký</label>
+                            <br><input type="text" name="tenDangKy" id="tenDangKy" class="input_form"
+                                placeholder="Nhập tên đăng ký...">
+                            <br><span class="error tenDangKy_error"></span>
+                        </div>
+                        <!-- div mật khẩu -->
+                        <div class="element_formDK">
+                            <label for="matKhau">Mật khẩu</label>
+                            <br><input type="password" name="matKhau" id="matKhau" class="input_form"
+                                placeholder="Nhập mật khẩu...">
+                            <br><span class="error matKhau_error"></span>
+                        </div>
+                        <!-- div nhập lại mật khẩu -->
+                        <div class="element_formDK">
+                            <label for="re_matKhau">Nhập lại mật khẩu</label>
+                            <br><input type="password" name="re_matKhau" id="re_matKhau" class="input_form"
+                                placeholder="Nhập lại mật khẩu...">
+                            <br><span class="error re_matKhau_error"></span>
+                        </div>
+                        <!-- div ngày sinh -->
+                        <div class="element_formDK">
+                            <label for="ngaySinh">Ngày sinh</label>
+                            <br><input type="date" name="ngaySinh" id="ngaySinh" placeholder="Chọn ngày sinh...">
+                            <br><span class="error ngaySinh_error"></span>
+                        </div>
+                        <!-- div giới tính -->
+                        <div class="element_formDK">
+                            <label for="gioiTinh">Giới tính</label>
+                            <br><input type="radio" name="gioiTinh" id="gioiTinh_Nam" value="0"
+                                placeholder="Chọn giới tính ...">
+                            <label for="gioiTinh_Nam">Nam</label>
+                            <input type="radio" name="gioiTinh" id="gioiTinh_Nu" value="1"
+                                placeholder="Chọn giới tính ...">
+                            <label for="gioiTinh_Nu">Nữ</label>
+                            <br><span class="error gioiTinh_error"></span>
+                        </div>
+                        <!-- div địa chỉ -->
+                        <div class="element_formDK">
+                            <label for="diaChi">Nhập địa chỉ:</label>
+                            <br><textarea name="diaChi" id="diaChi" cols="52" rows="5"
+                                placeholder="Nhập địa chỉ..."></textarea>
+                            <br><span class="error diaChi_error"></span>
+                        </div>
+                        <!-- điều khoản -->
+                        <input type="radio" name="dieuKhoan" id="dieuKhoan">
+                        <span for="dieuKhoan">Tôi đồng ý với các điều khoản và điều kiện.</span>
+                        <!-- ghi nhớ đăng nhập -->
+                        <br><input type="checkbox" name="ghiNhoDangNhap" id="ghiNhoDangNhap">
+                        <span for="ghiNhoDangNhap">Ghi nhớ đăng nhập</span>
+                        <!-- button đăng ký -->
+                        <div class="div_btn_DKy">
+                            <button type="button" class="btnDK">ĐĂNG KÝ</button>
+                        </div>
+                        <!-- chuyển sang trang đăng nhập -->
+                        <span>Bạn đã có tài khoản?<a href="dangnhap.html">đăng nhập ngay</a></span>
+                        <div class="social_icon_form">
+                            <span>Or</span><br>
+                            <a href="/">
+                                <i class="fab fa-telegram icon_form"></i>
+                            </a>
+                            <a href="/">
+                                <i class="fab fa-facebook-messenger icon_form"></i>
+                            </a>
+                            <a href="/">
+                                <i class="fab fa-facebook icon_form"></i>
+                            </a>
+                            <a href="/">
+                                <i class="fab fa-instagram-square icon_form"></i>
+                            </a>
+                            <a href="/">
+                                <i class="fab fa-pinterest icon_form"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- dòng slider của website LAGOMSTREETWEAR -->
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="IMAGES/SLIDE/slide-1.png" class="d-block w-100" alt="slide 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>LAGOM STREETWEAR</h1>
+                                <h4>THE IMPRESSIONISM</h4>
+                                <p>Giá trị nằm ở niềm tin</p>
+                                <p>lagomstreetwear@gmail.com</p>
+                                <button type="button" class="btn btn-outline-danger">Xem bộ sưu tập</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMAGES/SLIDE/slide-2.png" class="d-block w-100" alt="slide 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>LAGOM STREETWEAR</h1>
+                                <h4>CREATIVITY</h4>
+                                <p>Giá trị nằm ở niềm tin</p>
+                                <p>lagomstreetwear@gmail.com</p>
+                                <button type="button" class="btn btn-outline-danger">Xem bộ sưu tập</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMAGES/SLIDE/slide-3.png" class="d-block w-100" alt="slide 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>LAGOM STREETWEAR</h1>
+                                <h4>THE DADAISM</h4>
+                                <p>Giá trị nằm ở niềm tin</p>
+                                <p>lagomstreetwear@gmail.com</p>
+                                <button type="button" class="btn btn-outline-danger">Xem bộ sưu tập</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="IMAGES/SLIDE/slide-4.png" class="d-block w-100" alt="slide 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>LAGOM STREETWEAR</h1>
+                                <h4>THE BEAUTY AND THE BEAST</h4>
+                                <p>Giá trị nằm ở niềm tin</p>
+                                <p>lagomstreetwear@gmail.com</p>
+                                <button type="button" class="btn btn-outline-danger">Xem bộ sưu tập</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- dòng gạch ngang của website LAGOMSTREETWEAR -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <hr>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <!-- dòng footer của website LAGOMSTREETWEAR -->
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <h1>LAGOM STREETWEAR</h1>
+                    <p>Cái tên LAGOM STREETWEAR là lời khẳng định của founder về phong cách thời trang vừa vặn, thoải
+                        mái,
+                        không quá phô trương.</p>
+                    <hr>
+                    <p><i class="fas fa-shipping-fast"></i>Ship cod toàn quốc</p>
+                    <p><i class="fas fa-gift"></i>Free ship đơn hàng từ 799,000đ</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h4>Liên Hệ</h4>
+                    <ul style="list-style-type: none;">
+                        <li><i class="fas fa-home"></i>
+                            LAGOM STREETWEAR</li>
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            Số xx, Đường abc, Phường cbd, Quận jlk, TP csa</li>
+                        <li><i class="fas fa-envelope"></i>
+                            lagomstreetwear@gmail.com</li>
+                        <li><i class="fas fa-phone-alt"></i>
+                            091 209x xxx</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <h4>Chính sách</h4>
+                    <ul>
+                        <li>
+                            <a href="chinhSachThanhVien.html" class="list_Policy">Chính sách thành viên</a>
+                        </li>
+                        <li>
+                            <a href="chinhSachDoiTra.html" class="list_Policy">Chính sách đổi trả</a>
+                        </li>
+                        <li>
+                            <a href="chinhSachKiemHang.html" class="list_Policy">Chính sách kiểm hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <div>
+                        <h4>Đăng ký nhận thông tin</h4>
+                        <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-danger btn_email_footer" type="button"
+                                id="button-addon1">Đăng ký</button>
+                        </div>
+                        <input type="text" class="form-control" name="input_email" id="input_email"
+                            placeholder="Email của bạn..." aria-label="Example text with button addon"
+                            aria-describedby="button-addon1">
+                    </div>
+                    <div>
+                        <h6>Follow us</h6>
+                        <i class="fab fa-telegram social_icon_footer"></i>
+                        <i class="fab fa-pinterest social_icon_footer"></i>
+                        <i class="fab fa-facebook social_icon_footer"></i>
+                        <i class="fab fa-facebook-messenger social_icon_footer"></i>
+                        <i class="fab fa-instagram-square social_icon_footer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
